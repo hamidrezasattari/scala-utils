@@ -1,6 +1,7 @@
 package com.hrsat.leet
 
 import com.hrsat.leet.Leet.Leetable
+ import com.typesafe.scalalogging._
 
 object Leet {
   trait Leetable[T] {
@@ -31,7 +32,9 @@ object MyLeet extends Leetable[String] {
   }
 }
 
-object Main {
+object Main extends LazyLogging{
+  //val   logger=Logger.getLogger(getClass().getName())
+
   def main(args: Array[String]): Unit = {
     /* add your implementation below this line
 
@@ -60,8 +63,7 @@ object Main {
       }
     }
 
-    println(args(0)+" -> "+Leet.apply(args(0)))
-
+     logger.info(args(0)+" -> "+Leet.apply(args(0)))
   }
 }
 

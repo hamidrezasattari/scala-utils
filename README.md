@@ -29,3 +29,5 @@ Use the apply method `com.nurun.scala.Leet` object to convert a String into l337
 ### Testing
 
 For example we'll be trying to run the object using `scala com.hrsat.leet.Main "You are elite!"`
+
+Or run TestUils by right click on testReplace() unit test  and  click run
